@@ -18,12 +18,12 @@
 #INCLUDE "PROTHEUS.CH"
 
 USER FUNCTION F050MDVC
-Local dNextday := ParamIXB[1]
+Local dRetData := ParamIXB[1]
 Local cImposto := ParamIXB[2]
 Local dEmissao := ParamIXB[3]
 Local dEmis1   := ParamIXB[4]
 Local dVencRea := ParamIXB[5]  
-Local dRetData := dVencRea
+
     
     IF ALLTRIM(cImposto) == "IRF" .AND. SE2->E2_CODRET == "0422"
         dRetData := dVencRea

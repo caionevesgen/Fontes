@@ -24,7 +24,7 @@ If 	MV_PAR01 == 4 .AND.; // pela baixa
 Else
 	/* deve enviar apenas titulos onde ouve a retenção*/
 	cQuery	:= cQuery+=" AND NOT ( SE2.E2_PRETIRF IN (' ','1','6') AND F_GET_TX_IR(SE2.E2_FILIAL,SE2.E2_PREFIXO||SE2.E2_NUM||SE2.E2_PARCELA||SE2.E2_TIPO||SE2.E2_FORNECE||SE2.E2_LOJA,1) = 0 ) "
-	
+	/*cQuery	:= cQuery+=" AND SE2.E2_CODRET IN ('0422','8045')  AND SE2.E2_BAIXA <> ' ' "*/
 	
 EndIf
 
