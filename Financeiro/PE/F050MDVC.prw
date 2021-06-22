@@ -25,7 +25,7 @@ Local dEmis1   := ParamIXB[4]
 Local dVencRea := ParamIXB[5]  
 
     
-    IF ALLTRIM(cImposto) == "IRF" .AND. SE2->E2_CODRET == "0422"
+    IF ALLTRIM(cImposto) == "IRRF" .AND. SE2->E2_CODRET == "0422"
         dRetData := dVencRea
     ENDIF   
 
