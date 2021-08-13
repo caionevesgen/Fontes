@@ -81,7 +81,8 @@ aStruQry	:= SE5->(dbStruct())
 //If lChoose    
 
 	cQryAyx		:= StrTran(cQryAyx,"SE5.R_E_C_N_O_ RECSE5","SE5.R_E_C_N_O_ RECSE5,SE2.R_E_C_N_O_ RECSE2,E2_PREFIXO,E2_NUM,E2_PARCELA,E2_SEQBX,E2_NATUREZ,E2_EMISSAO,E2_VENCTO,E2_FORNECE,E2_LOJA,E2_CODRET,E2_VALOR  ")
-	cQryAyx		:= StrTran(cQryAyx,RetSqlname("SE5")+" SE5",RetSqlname("SE5")+" SE5, "+RetSqlName("SE2")+" SE2 ")
+	//CAIO NEVES - VIVAZ 53987 - 11/08/21
+	//cQryAyx		:= StrTran(cQryAyx,RetSqlname("SE5")+" SE5",RetSqlname("SE5")+" SE5, "+RetSqlName("SE2")+" SE2 ")
     
 	cQryAyx += " AND "
 	cQryAyx += "E2_TIPO  = 'TX '      			AND "
